@@ -1,0 +1,139 @@
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastro Pré-Avaliação Web</title>
+	<link rel="stylesheet" type="text/css" href="css/cadastro.css">
+	<script>
+	    function formatar(mascara, documento){
+	    	var i = documento.value.length;
+	    	var saida = mascara.substring(0,1);
+	    	var texto = mascara.substring(i)
+	    	if(texto.substring(0,1)!= saida){
+	    			documento.value += texto.substring(0,1)
+	    	}
+	}
+	</script>
+</head>
+<body bgcolor="gray">
+		<div class="Barratop">
+			<div class="Meiobarratop">
+				<img src="imagens/logo-branca.png" alt="" class="img">
+					<a href="logaut.php" class="Buttonsair"><img src="imagens/sair.png"></a>
+			</div>
+		</div>
+
+	<form action="cadastro.php" method="post">
+		<div class="Quadrocadastro">
+			<h1>Cadastro de funcionario</h1>
+			<fieldset>
+				<h2>Dados Gerais</h2><hr>
+				<!--TESTE
+					<div class="TesteInput"></div>
+				TESTE-->
+				<img src="imagens/perfil/default.jpg" alt="">
+				<div class="campo1">
+				
+					<label for="nome" display="inline"><label for=""display="inline" style="color:rgb(191,103,061)">•</label>Nome Completo</label><br/>
+					<input type="text" class="" required="" /> 
+				</div>
+				<div class="campo1">
+					<label for="nome" display="inline">Nome de vizualização</label><br/>
+					<input type="text" class="" required=""/> 
+				</div>
+				<div class="campo1">
+					<label for="nome" display="inline">Data de entrada</label><br/>
+					<input type="text" name="bday" maxlength="10" onkeypress="formatar('##/##/####', this)" required=""/>
+				</div>
+				<div class="campo1">
+					<label for="nome" display="inline">Login</label><br/>
+					<input type="text" class="" required=""/> 
+				</div>
+				<div class="campo1">
+					<label for="nome" display="inline">Cargo</label><br/>
+					<select name="" id="">
+						<option value=""></option>
+						<option value="">Aspirante</option>
+						<option value="">Produtor</option>
+						<option value="">Tecnico</option>
+						<option value="">Especialista</option>
+						<option value="">Supervisor</option>
+						<option value="">Coordernador</option>
+						<option value="">Gerente de Produção</option>
+						<option value="">Gerente de Operações</option>
+						<option value="">Diretor de Operações</option>
+						<option value="">Diretor Executivo</option>
+					</select>
+				</div>		
+				<div class="campo1">
+					<label for="nome" display="inline">Status</label> <br/>
+					<input type="radio" name="status"  value="status" checked="" style="margin-left:-70px;"/>
+					<label for="" class="status" >Ativo</label> 
+					<input type="radio" name="status"  value="status"/>
+					<label for="" class="status">Inativo</label> 
+				</div>										
+			</fieldset>
+
+			<fieldset style="position:relative;bottom:100px;margin-top:80px;">
+				<h2>Dados Pessoais</h2><hr>
+				<div class="campo">
+					<label for="nome" display="inline"><label for=""display="inline" style="color:rgb(191,103,061)">•</label>CPF</label> <br/>
+					<input type="text" class="" maxlength="14"onkeypress="formatar('###.###.###-##',this)"  required=""/>
+				</div>
+				<div class="campo">
+					<label for="nome" display="inline">RG</label> <br/>
+					<input type="text" class=""  maxlength="12" onkeypress="formatar('############',this)"  required=""/> 
+				</div>
+				<div class="campo">
+					<label for="nome" display="inline">Data de nascimento</label> <br/>
+					<input type="text" name="bday" maxlength="10" onkeypress="formatar('##/##/####',this)" required=""/>
+				</div>
+				<div class="campo">
+					<label for="nome" display="inline">Nome da Mãe</label> <br/>
+					<input type="text" class=""  required=""/> 
+				</div>					
+				<div class="campo">
+					<label for="nome" display="inline">Nome do Pai</label> <br/>
+					<input type="text" class=""  required=""/> 
+				</div>	
+				<div class="campo1" style="position:relative;top:10px;left:0px">
+					<label for="nome" display="inline">Sexo</label> <br/>
+					<input type="radio" name="sex"  value="status" checked="" style="margin-left:-70px;"/>
+					<label for="" class="status" >Masculino</label> 
+					<input type="radio" name="sex"  value="status"/>
+					<label for="" class="status">Feminino</label> 
+				</div>												
+			</fieldset>	
+
+			<fieldset style="position:relative;bottom:100px;">
+				<h2>Contatos</h2><hr>
+				<div class="campo">
+					<label for="nome" display="inline"><label for=""display="inline" style="color:rgb(191,103,061)">•</label>Endereço</label> <br/>
+					<input type="text" class=""  required=""/> 
+				</div>
+				<div class="campo">
+					<label for="nome" display="inline">Nº</label> <br/>
+					<input type="text" class="" required="" style="width:50px;"/> 
+				</div>
+				<div class="campo">
+					<label for="nome" display="inline">Bairro</label> <br/>
+					<input type="text" class=""  required=""/> 
+				</div>
+				<div class="campo">
+					<label for="nome" display="inline">CEP</label> <br/>
+					<input type="text" class="" maxlength="9" onkeypress="formatar('#####-###', this)"  required=""/> 
+				</div>				
+				<div class="campo">
+					<label for="nome" display="inline">Telefone</label> <br/>
+					<input type="text" class="" maxlength="10" onkeypress="formatar('##-####-####', this)"  required=""/> 
+				</div>				
+				<div class="campo">
+					<label for="nome" display="inline">Email</label> <br/>
+					<input type="email" class=""  required=""/> 
+				</div>																
+			</fieldset>		
+					<hr style="position:relative;top:-60px;">
+					<input type="submit" value="Salvar" id="cadastrar">		
+		</div>
+	</form>
+</body>
+</html>
