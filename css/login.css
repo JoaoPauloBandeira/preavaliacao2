@@ -1,0 +1,105 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color:rgb(46,46,46);
+}
+.Barratop{
+    background-color:rgb(191,103,061);
+    position: fixed;
+	height: 50px;
+	width:100%;
+	z-index: 1000;
+}
+form{
+	font-family: Trebuchet MS, sans-serif;
+	background-color:rgb(226,226,226);
+	position: relative;
+	top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	height: 450px;
+}
+.Quadrologin{
+	top:20px;
+	width: 300px; 
+	height: 250px;
+	left:30px; 
+	position: relative;
+}
+input{
+	position: relative;
+	top:50px;
+	left:50px;
+}
+.Campouser{
+	height: 50px; 
+	width:300px;
+	position: relative;
+	left:25px;
+	font-size: 16pt;
+}
+.Camposenha{
+	position: relative;
+	width: 300px;
+	height: 50px;
+	position: relative;
+	left:25px;
+	font-size: 16pt;
+	margin-bottom:-30px;
+}
+
+.Logar{
+	font-family: Trebuchet MS, sans-serif;
+	font-weight:900;
+	font-size: 14pt;
+	color:white;
+	width:300px;
+	height:50px;
+	border:none;
+	position: relative;
+	left:25px;
+	cursor:pointer;
+	background-color:rgb(237,73,0);
+	border:5px solid rgb(205,205,205);
+}
+.Imglogin{
+	height: 40px;
+	position: relative;
+	top:0px;
+	left:290px;
+	border: none; 
+	margin:5px auto; 
+	float: left;  
+	cursor: pointer;
+}
+.Imagesenha{
+	height: 40px;
+	position: relative;
+	top:30px;
+	left:290px;
+	border: none; 
+	margin:5px auto; 
+	float: left;  
+	cursor: pointer;
+	margin-bottom:20px; 
+}
+.Cadastrarpage{
+	font-family: Trebuchet MS, sans-serif;
+	font-weight:900;
+	font-size: 14pt;
+	color:gray;
+	width:100px;
+	height:40px;
+	left:210px;
+	cursor:pointer;
+	border:none;
+	top:-5px;
+}
+.Senhaesquecida{
+	position: relative;
+	left:30px;
+	top:60px;
+}

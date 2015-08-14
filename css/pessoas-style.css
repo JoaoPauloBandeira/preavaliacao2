@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "TrebuchetMS";
+    src: url("../fontes/trebuc.ttf");
+}
+@font-face {
+    font-family: "TrebuchetMSBold";
+    src: url("../fontes/trebucbd.ttf");
+}
+*{
+    margin: 0;
+    font-family: TrebuchetMS, sans-serif;
+    padding: 0;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.seta{
+    float: right;
+    position: fixed;
+    z-index: 100;
+    left: 137px;
+    background-color: #2c2c2d;
+}
+#setaCima{
+    float: right;
+    top: 0;
+}
+#setaBaixo{
+    bottom: 0;
+}
+#hrBlocoPessoas1{
+    border: transparent;
+    border-top: #ad653e 1px solid;
+    margin-bottom: 10px;
+    width: 170px;
+    top: 35px;
+    position: fixed;
+    z-index: 100;
+}
+#pessoasTodas{
+    margin-top: 50px;
+}
+.bgFundoFixo{
+    background-image:  url("../imagens/preav.png");
+    width: 175px;
+    height: 35px;
+    position: fixed;
+    z-index: 99;
+}
+#bgCimaFixo{
+    top: 0;
+}
+#bgBaixoFixo{
+    bottom: 0;
+}
+table {
+    color: white;
+    top: 10px;
+    margin-bottom: 45px;
+    overflow: hidden;
+    text-align: center;
+}
+table img{
+    width: 57px;
+    height: 57px;
+    margin-top: 5px;
+    border-radius: 100%;
+}
+td{
+    display: table-cell;
+    vertical-align: inherit;
+}
+#hrBlocoPessoas2{
+    border: transparent;
+    border-top: #ad653e 1px solid;
+    width: 170px;
+    margin-top: 440px;
+    bottom: 35px;
+    position: fixed;
+    z-index: 100;
+}

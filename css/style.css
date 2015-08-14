@@ -1,0 +1,417 @@
+*{
+margin:0;
+padding:0;
+    font-family: Trebuchet MS, sans-serif;
+}
+h2{
+    position: relative;
+    left:5px;
+    bottom:5px;
+    font-size: 18pt;
+}
+p{
+    position: relative;
+    left:5px;
+    font-weight:bold;
+    font-size: 15pt;
+}
+hr{
+	width:300px;
+	border: none;
+	border-top:1px solid #fe8646;
+}
+.Barratop{
+    background-color:rgb(191,103,061);
+    position: fixed;
+	height: 50px;
+	width:100%;
+	z-index: 1000;
+}
+.Meiobarratop{
+	width: 1000px;
+	position: relative;
+	margin-left: auto;
+	margin-right:auto;
+	
+}
+.Background{
+    background-image: url("../imagens/background.png");
+    background-repeat: repeat;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    height: auto;
+    width: 1000px;
+    padding: 10px;
+    top:50px;
+}
+.Imageinfo{
+    background-image: url("../imagens/informacoes.png");
+    background-size:100%;
+    background-repeat: no-repeat;
+    position:relative;
+    height: 131px;
+    width: 911px;
+	margin:44px;
+}
+.Infouser{
+	font-family: sans-serif;
+	color: white;
+	position: relative;
+	bottom:115px;
+	left:170px;
+	line-height: 25px
+}
+.ImageG{
+	background-size: 100%;
+	border-radius: 50%;
+	position: relative;
+	bottom:5px;
+}
+.ImageP{
+	background-size: 100%;
+	border-radius: 50%;
+	position: relative;
+	float: right;
+	right: 200px;
+	width:50px;
+	height: 50px;
+}
+.Imagecoment{
+    background-image: url("../imagens/comentario.png");
+    background-repeat: no-repeat;
+    color: white;
+    padding: 5px 10px 5px 15px;
+    background-size: 100% 100%;
+    position: relative;
+    left: 190px;
+	bottom:75px;
+}
+.botoes{
+	margin-left:-10px;
+}
+.Buttonconfig{
+	position: relative;
+	left:770px;
+	bottom: 55px;
+}
+.Buttonsair{
+	position: relative;
+	left: 960px;
+	bottom:30px;
+}
+.ButtonTabel{
+	position: relative;
+	left: 50px;
+	width:700px;
+	height: 500px;
+}
+.ButtonTabel a input{ 
+    font-family: Trebuchet MS, sans-serif;
+	font-size: 11pt;
+	position: relative;
+	border:none;
+	background-color:white;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.5); 
+	border-radius: 4px;
+    left:0px;
+}
+input:focus {outline:none;}
+select:focus {outline:none;}
+#botao1{
+    background:black;
+    color:white;
+    box-shadow: 1px 1px 5px;
+}
+#botao2{
+    box-shadow: 1px 1px 5px;
+}
+#botao3{
+    box-shadow: 1px 1px 5px;
+}
+.InputInfor{
+	position: relative;
+	right: 10px;
+	width: 190px;
+	height: 35px;
+	cursor:pointer;
+    font-weight: 500;
+
+}
+
+.InputComo{
+	position: relative;
+	right: 20px;
+	width:190px;
+	height: 35px;
+	cursor:pointer;
+    font-weight: 500;
+
+}
+.InputAva{
+	position: relative;
+	right: 30px;
+	width:190px;
+	height: 35px;
+	cursor:pointer;
+    font-weight: 500;
+
+}
+
+.Input1{
+    position: relative;
+    left:0px;
+
+
+}
+.Input2{
+    position: relative;
+    left:15px;
+
+}
+.Input3{
+    position: relative;
+    left:30px;
+
+}
+.IframeThreeTabela{
+	position: relative;
+	float:left;
+	right: 25px;
+	width: 700px;
+	height:450px;
+}
+.iframetabela{
+	position: relative;
+	width: 230px;
+	height: 630px;
+	bottom:290px;
+	left:678px;
+	border:none;
+}
+.info{
+    width: 600px;
+    height: 55px;
+    background-color:rgb(191,103,061);
+    border-radius: 5px;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 18pt;
+    color: white;
+    position: relative;
+}
+.boxaba1{
+    width: 600px;
+    height: 380px;
+    background-color: white;
+    position: relative;
+    top: 25px;
+    border-radius: 5px;
+    font-size: 19pt;
+    font-family: bold;
+    font-weight: 900;
+    box-shadow: -2px 1px 5px;
+    left: 30px;
+    line-height: 35px;
+}
+.boxaba2{
+    width: 600px;
+    height: 380px;
+    background-color: white;
+    position: relative;
+    top: 25px;
+    border-radius: 5px;
+    font-size: 17px;
+    box-shadow: -2px 1px 5px;
+    left: 30px;
+}
+a{
+	position: relative;
+	margin-left:20px;
+	font-weight:300;
+}
+.TabelacomentariosNEG{
+	background-color:white;
+	position: relative;
+	border:1px solid black;
+	width: 450px;
+	height: 400px;
+	left:40px;
+    border-top-right-radius:5px; 
+    border-top-left-radius:5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.60);
+}
+.TabelacomentariosPOS{
+	background-color:white;
+	position: relative;
+	border:1px solid black;
+	width: 450px;
+	height: 400px;
+	left:510px;
+	bottom:401px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.60);
+    border-top-right-radius:5px; 
+    border-top-left-radius:5px;
+}
+.hr20{
+    width: 400px;
+    border-color: black;
+    position: relative;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hrlightbox{
+    width: 400px;
+    border-color: black;
+    position: relative;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Imagelapis{
+    left: 190px; 
+    position: relative; 
+    top: -10px;
+    cursor: pointer;
+}
+.Barrainfo{
+    height: 45px;
+    width: 450px;
+    background-color: black;
+    border-radius: 5px;
+    font-family: Trebuchet MS, sans-serif;
+    text-align: center;
+}
+.Nameuser{
+	position: relative;
+	float: right;
+	font-family: Trebuchet MS,sans-serif;
+    font-weight: bold;
+    font-size: 14pt;
+    color:white;
+	top:10px;
+	right: 40px;
+	border-right: 1px solid black;
+	padding: 5px 5px 5px 5px;
+}
+span{
+	position: relative;
+	color: white;
+	z-index: 1002;
+    top:10px;
+    font-size: 14pt;
+}
+/*Style Lightbox*/
+#background{
+    position: fixed;
+    width: 100%;
+    height: 100% ;
+    background-color:#bebebe;
+    opacity: .50;
+    z-index: 100;
+    display: none;
+
+
+}
+#lightbox {
+    position: fixed;
+    top: 25%;
+    left: 33%;
+    width: 600px;
+    height: 500px;
+    background-color: white;
+    z-index: 101;
+    padding: 14px;
+    border-radius: 3px;
+    display: none;
+    box-shadow: 1px 1px 1px;
+}
+.tarea{
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+    position: relative;
+    top:100px;
+    left: 50px;
+}
+#titlecoment{
+    position: relative;
+    top:0px;
+    text-align: center;
+}
+#close {
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+.enviar{
+    background-color:#ad653e;
+    color:white;
+    border-radius: 2px;
+    float: right;
+    top: 410px;
+    right: 50px;
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    font-family: bold;
+    border: none;
+    position:relative;
+    padding-top:5px;
+    font-family:Trebuchet MS, sans-serif;
+}
+/*Style Menu configurações*/
+ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul > li {
+    float: right;
+}
+ul > li a {
+    color: #fff;
+    font-weight: bold;
+    line-height: 40px;
+    height:30px;
+    width: 100px;
+    display:block;
+    padding:0px 5px;
+}
+ul li ul {
+    display: none;
+    position: relative;
+    background: #333333;
+}
+ul li ul li {
+    float: none;
+    line-height: 10px;
+    height: 30px;
+}
+
+ul li:hover {
+    background-color:rgb(191,103,061);
+}
+.Subbotton{
+    position: relative;
+    flot:right;
+    bottom:60px;
+    left:80px;
+}
+select{
+    position: relative;
+    float: right;
+    right: 90px;
+    border-radius: 5px; 
+    top:10px;
+    z-index: 1004;
+}

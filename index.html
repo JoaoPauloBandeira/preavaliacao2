@@ -1,0 +1,67 @@
+
+<meta charset="utf-8">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login-Pré Avaliação Web</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="imagens/icon.ico">
+	<style>
+		p{
+			position: relative;
+			top:60px;
+			left:25px;
+			text-decoration: none;
+			font-weight: 500;
+			font-size: 13pt;
+		}
+
+	.Senhaesquecida{
+	    text-decoration: underline;
+	    position: relative;
+	    top:0px;
+	    left:5;
+	}	
+	.erro{
+		color:red;
+		font-size: 20pt;
+		z-index: 1005;
+		position: relative;
+	}
+
+	</style>
+	<script>
+
+    function showElement() {  
+        document.getElementById("hiddenEl").style.display = "block";  
+    }  
+    function hideElement() {  
+        document.getElementById("hiddenEl").style.display = "none";  
+    }  
+    document.getElementById("elemento").addEventListener("mouseover", showElement, false);  
+    document.getElementById("elemento").addEventListener("mouseout", hideElement, false); 
+	</script>
+</head>
+<body>
+
+	<form method="post" action="index.php">
+			<img src="imagens/logo.png" alt="" style="position:relative;left:95px;top:30px;">
+
+			<div class="Quadrologin">
+				<div class="QuadroUser">
+					<input type="text" placeholder="Usuário" name="username" class="Campouser" required="" maxlength="15">
+					<img src="imagens/login.png" alt="" class="Imglogin">
+				</div>
+				
+				<div class="QuadroSenha">
+					<input type="password" placeholder="Senha" name="senha" class="Camposenha" required="" maxlength="15"> 
+					<img src="imagens/senha.png" alt="" class="Imagesenha">
+				</div>
+				<input type="submit" value="Entrar" name="Entrar" class="Logar" onclick="verificar()">
+
+				<p>Esqueceu sua Senha?<a href="" class="Senhaesquecida">Clique Aqui.</a></p>
+			</div>		
+	</form>
+</body>
+</html>
